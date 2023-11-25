@@ -28,6 +28,7 @@ public class IndexController {
     @PostMapping
     public String indexPostRoute(@ModelAttribute IndexDto indexDto, Model model) {
         model.addAttribute("indexDto", indexDto);
+
         return "main/result";
     }
 }
